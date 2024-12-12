@@ -1,7 +1,7 @@
 {
   "name": "secretsanta",
   "version": "0.1.0",
-  "homepage": "https://sparksaiteja.github.io/secretsanta",
+  "homepage": "https://sparksaiteja.github.io/",
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
