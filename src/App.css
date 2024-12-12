@@ -1,38 +1,87 @@
-.App {
+.full-screen-background {
+  width: 100vw;
+  /* Full viewport width */
+  height: 100vh;
+  /* Full viewport height */
+  background-image: url('/public/image.jpg');
+  /* Path to your image */
+  background-size: cover;
+  /* Scale image to cover the entire area */
+  background-repeat: no-repeat;
+  /* Prevent the image from repeating */
+  background-position: center;
+  /* Center the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.User-secret-key {
+  width: 30%;
+  height: 20%;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #000;
+  text-align: center;
+
+}
+
+.Input-field{
+  width: 80%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+
+.Input-field:focus {
+  border-color: #4caf50; /* Green border on focus */
+  outline: none; /* Remove default focus outline */
+}
+
+.Input-field1{
+  width: 80%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Input-field1:focus {
+  border-color: #4caf50; /* Green border on focus */
+  outline: none; /* Remove default focus outline */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image-src{
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.User-secret-key1{
+  width: 40%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
+  flex-direction: column;
+  color: #000;
+  text-align: center;
 }
