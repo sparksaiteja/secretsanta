@@ -62,7 +62,7 @@ const About = ({ route }) => {
   if(value)
       {
            get_item = names.filter(i => {
-              return i.secretcode == value
+              return i.secretcode === value
           })
       }
 
@@ -71,8 +71,9 @@ const About = ({ route }) => {
 <div className="full-screen-background" >
 <div className='User-secret-key1' >
 <h1>Secret Santa hero </h1>
-<img src='https://www.opensourcetext.org/wp-content/uploads/2020/11/ssct-4.png' className='image-src'  />
-<input value={get_item[0].name}  className='Input-field1' disabled   /> 
+<img src='https://www.opensourcetext.org/wp-content/uploads/2020/11/ssct-4.png' className='image-src' alt="ixaiuvxa" />
+
+<h1   >{get_item[0].name} </h1>
 </div>
 </div>
   );
